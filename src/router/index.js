@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '../components/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,14 +10,36 @@ const router = createRouter({
       component: HomeView
     },
     {
+      path: '/works',
+      name: 'simmerWorks',
+      component: () => import('@/components/WorksView.vue')
+    },
+    {
+      path: '/menu',
+      name: 'simmerWorksMenu',
+      component: () => import('@/components/MenuView.vue')
+    },
+    {
       path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    }
+      name: 'simmerWorksAbout',
+      component: () => import('@/components/AboutView.vue')
+    },
+    {
+      path: '/checkout',
+      name: 'simmerWorksCheckout',
+      component: () => import('@/components/CheckoutView.vue')
+    },
+    {
+      path: '/simmer-works-copyright-information',
+      name: 'SimmerCopyright',
+      component: () => import('@/components/SimmerCopyright.vue')
+    }, 
   ]
 })
+
+router.afterEach(() => {
+  // Scroll to the top of the page after navigation
+  window.scrollTo(0, 0);
+});
 
 export default router
