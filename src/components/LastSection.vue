@@ -37,11 +37,7 @@
             <RouterLink to="/about" class="last-section__buttons__btn">About</RouterLink>
           </li>
         </ul>
-        <img
-          class="last-section__buttons__img"
-          src="/src/assets/images/holla.svg"
-          alt="holla"
-        />
+        <img class="last-section__buttons__img" src="/src/assets/images/holla.svg" alt="holla" />
       </div>
 
       <p class="last-section__right-text rose">Simmer Works</p>
@@ -50,44 +46,44 @@
 </template>
 
 <script>
-import { onMounted } from "vue";
-import { useRouter } from 'vue-router';
+import { onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 
 export default {
   setup() {
     const router = useRouter()
 
     onMounted(() => {
-      const eye = document.getElementsByClassName("ball");
+      const eye = document.getElementsByClassName('ball')
 
-      document.addEventListener("mousemove", (e) => {
+      document.addEventListener('mousemove', (e) => {
         // Get the horizontal position of the mouse cursor relative to the viewport
-        let clientX = e.clientX;
+        let clientX = e.clientX
         // Get the vertical position of the mouse cursor relative to the viewport
-        let clientY = e.clientY;
+        let clientY = e.clientY
 
         // Get the width and height of the viewport
-        let viewportWidth = window.innerWidth;
-        let viewportHeight = window.innerHeight;
+        let viewportWidth = window.innerWidth
+        let viewportHeight = window.innerHeight
 
         // Calculate the horizontal center of the viewport
-        let centerX = viewportWidth / 2;
+        let centerX = viewportWidth / 2
         // Calculate the vertical center of the viewport
-        let centerY = viewportHeight / 2;
+        let centerY = viewportHeight / 2
 
         // Calculate the horizontal and vertical position of the mouse cursor relative to the center of the viewport,
         // then scale it to a range suitable for the CSS transform property
-        let scaledX = ((clientX - centerX) / (viewportWidth / 2)) * 20;
-        let scaledY = ((clientY - centerY) / (viewportHeight / 2)) * 10;
+        let scaledX = ((clientX - centerX) / (viewportWidth / 2)) * 20
+        let scaledY = ((clientY - centerY) / (viewportHeight / 2)) * 10
 
         // Loop through each element in the 'eye' collection
         for (let i = 0; i < eye.length; i++) {
           // Apply a CSS transform to the element to translate it based on the scaled mouse position
-          eye[i].style.transform = `translate(${scaledX}%, ${scaledY}%)`;
+          eye[i].style.transform = `translate(${scaledX}%, ${scaledY}%)`
         }
-      });
-    });
-    
+      })
+    })
+
     function checkout() {
       router.push('/checkout')
     }
@@ -95,8 +91,8 @@ export default {
     return {
       checkout
     }
-  },
-};
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -189,7 +185,9 @@ $txt-black: $black;
       padding: 0.7rem 1rem;
       border-radius: 0.5rem;
       cursor: pointer;
-      transition: background-color 0.2s, color 0.2s;
+      transition:
+        background-color 0.2s,
+        color 0.2s;
 
       &:hover {
         background-color: var(--black);

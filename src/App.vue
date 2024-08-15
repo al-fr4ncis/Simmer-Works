@@ -8,17 +8,17 @@
 </template>
 
 <script>
-import MainNav from "@/components/MainNav.vue";
-import LastSection from "@/components/LastSection.vue";
-import FooterSection from "@/components/FooterSection.vue";
+import MainNav from '@/components/MainNav.vue'
+import LastSection from '@/components/LastSection.vue'
+import FooterSection from '@/components/FooterSection.vue'
 
 export default {
   components: {
     MainNav,
     LastSection,
-    FooterSection,
-  },
-};
+    FooterSection
+  }
+}
 </script>
 
 <style>
@@ -36,7 +36,7 @@ html {
   scrollbar-width: thin;
 }
 
-html, 
+html,
 html:focus-within {
   scroll-behavior: auto;
 }

@@ -2,14 +2,11 @@
   <Section class="works">
     <div class="works__container container">
       <div class="works__header">
-        <h1 class="works__title">
-          What we've <span class="underline">served</span> so far.
-        </h1>
+        <h1 class="works__title">What we've <span class="underline">served</span> so far.</h1>
         <p class="works__mission be-vietnam-pro-semibold">
-          Our mission is simple — consistently deliver ideas and work that
-          matter, and exceed client expectations. Reaffirming their identities,
-          building their legacies, promoting their services, and impressing
-          their customers — fulfilling your goals, as you fulfill ours.
+          Our mission is simple — consistently deliver ideas and work that matter, and exceed client
+          expectations. Reaffirming their identities, building their legacies, promoting their
+          services, and impressing their customers — fulfilling your goals, as you fulfill ours.
         </p>
       </div>
 
@@ -18,12 +15,8 @@
           <div class="works__item__content">
             <p class="restaurant-type">Chinese Restaurant</p>
             <h1 class="restaurant-name">Potch Restaurant</h1>
-            <p class="restaurant-tagline be-vietnam-pro-semibold">
-              Good Food. Good Fortune.
-            </p>
-            <RouterLink
-              to="/menu"
-              class="cta-link be-vietnam-pro-semibold"
+            <p class="restaurant-tagline be-vietnam-pro-semibold">Good Food. Good Fortune.</p>
+            <RouterLink to="/menu" class="cta-link be-vietnam-pro-semibold"
               >Discover How</RouterLink
             >
           </div>
@@ -32,12 +25,8 @@
           <div class="works__item__content">
             <p class="restaurant-type">Coffee Shop</p>
             <h1 class="restaurant-name">Cafe Ynani</h1>
-            <p class="restaurant-tagline be-vietnam-pro-semibold">
-              Harvested with Love
-            </p>
-            <RouterLink
-              to="/menu"
-              class="cta-link be-vietnam-pro-semibold"
+            <p class="restaurant-tagline be-vietnam-pro-semibold">Harvested with Love</p>
+            <RouterLink to="/menu" class="cta-link be-vietnam-pro-semibold"
               >Discover How</RouterLink
             >
           </div>
@@ -46,12 +35,8 @@
           <div class="works__item__content">
             <p class="restaurant-type">Cafe</p>
             <h1 class="restaurant-name">Foam Coffee</h1>
-            <p class="restaurant-tagline be-vietnam-pro-semibold">
-              Coffee & Chill
-            </p>
-            <RouterLink
-              to="/menu"
-              class="cta-link be-vietnam-pro-semibold"
+            <p class="restaurant-tagline be-vietnam-pro-semibold">Coffee & Chill</p>
+            <RouterLink to="/menu" class="cta-link be-vietnam-pro-semibold"
               >Discover How</RouterLink
             >
           </div>
@@ -60,12 +45,8 @@
           <div class="works__item__content">
             <p class="restaurant-type">Farm</p>
             <h1 class="restaurant-name">Co-Grown</h1>
-            <p class="restaurant-tagline be-vietnam-pro-semibold">
-              WE PLANT GOODNESS
-            </p>
-            <RouterLink
-              to="/menu"
-              class="cta-link be-vietnam-pro-semibold"
+            <p class="restaurant-tagline be-vietnam-pro-semibold">WE PLANT GOODNESS</p>
+            <RouterLink to="/menu" class="cta-link be-vietnam-pro-semibold"
               >Discover How</RouterLink
             >
           </div>
@@ -74,12 +55,8 @@
           <div class="works__item__content">
             <p class="restaurant-type">Skincare</p>
             <h1 class="restaurant-name">The Skinery</h1>
-            <p class="restaurant-tagline be-vietnam-pro-semibold">
-              Glow beyond.
-            </p>
-            <RouterLink
-              to="/menu"
-              class="cta-link be-vietnam-pro-semibold"
+            <p class="restaurant-tagline be-vietnam-pro-semibold">Glow beyond.</p>
+            <RouterLink to="/menu" class="cta-link be-vietnam-pro-semibold"
               >Discover How</RouterLink
             >
           </div>
@@ -88,12 +65,8 @@
           <div class="works__item__content">
             <p class="restaurant-type">Sushi Restaurant</p>
             <h1 class="restaurant-name">Ichiban Manila</h1>
-            <p class="restaurant-tagline be-vietnam-pro-semibold">
-              Warmth in every table.
-            </p>
-            <RouterLink
-              to="/menu"
-              class="cta-link be-vietnam-pro-semibold"
+            <p class="restaurant-tagline be-vietnam-pro-semibold">Warmth in every table.</p>
+            <RouterLink to="/menu" class="cta-link be-vietnam-pro-semibold"
               >Discover How</RouterLink
             >
           </div>
@@ -238,7 +211,7 @@ $bg-white: $white-400;
 
         &::after {
           position: absolute;
-          content: "";
+          content: '';
           background-image: url(/src/assets/images/right_arrow.svg);
           background-size: cover;
           height: 2rem;

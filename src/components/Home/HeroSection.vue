@@ -2,11 +2,7 @@
   <section class="hero">
     <ul class="hero__list">
       <li class="hero__item">
-        <img
-          src="@/assets/images/utensils.webp"
-          alt="utensils"
-          class="img-cell"
-        />
+        <img src="@/assets/images/utensils.webp" alt="utensils" class="img-cell" />
         <p>
           <span class="line-one">
             <span class="crafted be-vietnam-pro-bold">Crafted</span>
@@ -17,10 +13,7 @@
       </li>
       <li class="hero__item">
         <picture>
-          <source
-            media="(min-width:990px)"
-            srcset="@/assets/images/fish.webp"
-          />
+          <source media="(min-width:990px)" srcset="@/assets/images/fish.webp" />
           <img src="@/assets/images/fish_right.webp" alt="Fish" />
         </picture>
 
@@ -33,11 +26,7 @@
         </p>
       </li>
       <li class="hero__item">
-        <img
-          src="@/assets/images/drink.webp"
-          alt="drink"
-          class="img-cell"
-        />
+        <img src="@/assets/images/drink.webp" alt="drink" class="img-cell" />
 
         <p>
           <span class="line-one">
@@ -49,10 +38,7 @@
       </li>
       <li class="hero__item">
         <picture>
-          <source
-            media="(min-width:990px)"
-            srcset="@/assets/images/holla.webp"
-          />
+          <source media="(min-width:990px)" srcset="@/assets/images/holla.webp" />
           <img src="@/assets/images/holla_up.webp" alt="holla" />
         </picture>
 
@@ -63,10 +49,7 @@
       </li>
       <li class="hero__item">
         <picture>
-          <source
-            media="(min-width:990px)"
-            srcset="@/assets/images/menu.webp"
-          />
+          <source media="(min-width:990px)" srcset="@/assets/images/menu.webp" />
           <img src="@/assets/images/menu_right.webp" alt="Fish" />
         </picture>
 
@@ -82,22 +65,14 @@
           <span class="be-vietnam-pro-bold">.00</span>
         </div>
         <p class="roboto-black p-one">Fresh Ideas</p>
-        <img
-          src="@/assets/images/burger.webp"
-          alt="burger"
-          class="img-cell"
-        />
+        <img src="@/assets/images/burger.webp" alt="burger" class="img-cell" />
         <p class="p-two">
           <span class="be-vietnam-pro-bold">Infused with</span>
           <span class="libre-baskerville-regular-italic">insight.</span>
         </p>
       </li>
       <li class="hero__item">
-        <img
-          src="@/assets/images/fries.webp"
-          alt="fries"
-          class="img-cell"
-        />
+        <img src="@/assets/images/fries.webp" alt="fries" class="img-cell" />
         <p>
           <span class="line-one">
             <span class="libre-baskerville-regular-italic">Bucket</span>
@@ -107,46 +82,26 @@
         </p>
       </li>
       <li class="hero__item">
-        <img
-          src="@/assets/images/simmer_works.webp"
-          alt="simmer_works"
-          class="img-cell"
-        />
-        <img
-          src="@/assets/images/simmer_works_logo.webp"
-          alt="logo"
-          class="logo"
-        />
+        <img src="@/assets/images/simmer_works.webp" alt="simmer_works" class="img-cell" />
+        <img src="@/assets/images/simmer_works_logo.webp" alt="logo" class="logo" />
       </li>
       <li class="hero__item">
         <p class="roboto-black p-one">Sliced To Precision</p>
-        <img
-          src="@/assets/images/pizza.webp"
-          alt="pizza"
-          class="img-cell"
-        />
+        <img src="@/assets/images/pizza.webp" alt="pizza" class="img-cell" />
         <p class="p-two">
           <span class="be-vietnam-pro-bold">Carefully</span>
           <span class="libre-baskerville-regular-italic">crafted.</span>
         </p>
       </li>
       <li class="hero__item">
-        <img
-          src="@/assets/images/pan.webp"
-          alt="pan"
-          class="img-cell"
-        />
+        <img src="@/assets/images/pan.webp" alt="pan" class="img-cell" />
         <p>
           <span class="be-vietnam-pro-bold">Cooking up</span>
           <span class="libre-baskerville-regular-italic">stories.</span>
         </p>
       </li>
       <li class="hero__item">
-        <img
-          src="@/assets/images/taco.webp"
-          alt="taco"
-          class="img-cell"
-        />
+        <img src="@/assets/images/taco.webp" alt="taco" class="img-cell" />
         <p>
           <span class="line-one">
             <span class="be-vietnam-pro-bold s-one">Let's</span>
@@ -159,11 +114,7 @@
         </p>
       </li>
       <li class="hero__item">
-        <img
-          src="@/assets/images/mitten.webp"
-          alt="mitten"
-          class="img-cell"
-        />
+        <img src="@/assets/images/mitten.webp" alt="mitten" class="img-cell" />
         <p>
           <span class="libre-baskerville-regular-italic">Simmering</span>
           <span class="be-vietnam-pro-bold">execution.</span>
@@ -173,10 +124,7 @@
         <p class="roboto-black p-one">Indulge</p>
 
         <picture>
-          <source
-            media="(min-width:990px)"
-            srcset="@/assets/images/pasta.webp"
-          />
+          <source media="(min-width:990px)" srcset="@/assets/images/pasta.webp" />
           <img src="@/assets/images/pasta_up.webp" alt="holla" />
         </picture>
 
@@ -313,7 +261,7 @@ $clr-white-600: var(--white-400);
 
         .with::before,
         .with::after {
-          content: " ";
+          content: ' ';
         }
       }
     }
@@ -334,7 +282,7 @@ $clr-white-600: var(--white-400);
         }
 
         .to::before {
-          content: " ";
+          content: ' ';
         }
       }
     }
@@ -350,7 +298,7 @@ $clr-white-600: var(--white-400);
         line-height: 1.88rem;
 
         .of::before {
-          content: " ";
+          content: ' ';
         }
       }
     }
@@ -470,7 +418,7 @@ $clr-white-600: var(--white-400);
 
           span:nth-child(2) {
             &::before {
-              content: " ";
+              content: ' ';
             }
           }
         }
@@ -554,7 +502,7 @@ $clr-white-600: var(--white-400);
       }
     }
     &:nth-child(10) {
-      background-image: url("@/assets/images/wavy_green_right.png");
+      background-image: url('@/assets/images/wavy_green_right.png');
       background-size: cover;
       grid-row: 1;
       grid-column: 1 / 8;
@@ -582,7 +530,7 @@ $clr-white-600: var(--white-400);
 
         .line-one {
           span.s-one:nth-child(1)::after {
-            content: " ";
+            content: ' ';
           }
         }
       }
@@ -647,7 +595,7 @@ $clr-white-600: var(--white-400);
 
         span.s-three {
           span:nth-child(1)::after {
-            content: " ";
+            content: ' ';
           }
 
           span.s-three,
@@ -658,7 +606,7 @@ $clr-white-600: var(--white-400);
           span.s-three,
           span:nth-child(2)::after {
             position: absolute;
-            content: "";
+            content: '';
             width: 100%;
             height: 1px;
             left: 0;
@@ -954,7 +902,7 @@ $clr-white-600: var(--white-400);
         }
       }
       &:nth-child(10) {
-        background-image: url("@/assets/images/wavy_green.png");
+        background-image: url('@/assets/images/wavy_green.png');
         grid-column: 1;
         grid-row: 15 / 23;
 

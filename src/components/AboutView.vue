@@ -1,89 +1,99 @@
 <template>
-    <Section class="about">
-        <div class="about__container container">
-            <h1 class="about__title">The Creative Cooks</h1>
-            <ul class="about__cooks-list" role="list">
-                <li class="about__cooks-item">
-                    <img class="about__cooks-item__img" src="/src/assets/images/1.webp" alt="img">
-                    <div class="about__cooks-item__text-container text-container">
-                        <p class="about__cooks-item__name name">R.K. De la Rosa</p>
-                        <p class="about__cooks-item__role role be-vietnam-pro-semibold">Creative Director</p>
-                        <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">Crazy bao't design.</p>
-                    </div>
-                </li>
-                <li class="about__cooks-item">
-                    <img class="about__cooks-item__img" src="/src/assets/images/2.webp" alt="img">
-                    <div class="about__cooks-item__text-container text-container">
-                        <p class="about__cooks-item__name name">Jean Chua</p>
-                        <p class="about__cooks-item__role role be-vietnam-pro-semibold">Chef Strategist</p>
-                        <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">I'm cold, but I can make you happy. *wink*</p>
-                    </div>
-                </li>
-                <li class="about__cooks-item">
-                    <img class="about__cooks-item__img" src="/src/assets/images/3.webp" alt="img">
-                    <div class="about__cooks-item__text-container text-container">
-                        <p class="about__cooks-item__name name">Jena Hernandez</p>
-                        <p class="about__cooks-item__role role be-vietnam-pro-semibold">Multimedia Artist</p>
-                        <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">Ramen calm.</p>
-                    </div>
-                </li>
-                <li class="about__cooks-item">
-                    <img class="about__cooks-item__img" src="/src/assets/images/4.webp" alt="img">
-                    <div class="about__cooks-item__text-container text-container">
-                        <p class="about__cooks-item__name name">Kristel De Leon</p>
-                        <p class="about__cooks-item__role role be-vietnam-pro-semibold">Accounts Executive</p>
-                        <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">Livin' la Vida Yolk'a!</p>
-                    </div>
-                </li>
-                <li class="about__cooks-item">
-                    <img class="about__cooks-item__img" src="/src/assets/images/5.webp" alt="img">
-                    <div class="about__cooks-item__text-container text-container">
-                        <p class="about__cooks-item__name name">Alexander Marinas</p>
-                        <p class="about__cooks-item__role role be-vietnam-pro-semibold">Web Development Head</p>
-                        <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">Sip happens.</p>
-                    </div>
-                </li>
-                <li class="about__cooks-item">
-                    <img class="about__cooks-item__img" src="/src/assets/images/6.webp" alt="img">
-                    <div class="about__cooks-item__text-container text-container">
-                        <p class="about__cooks-item__name name">Psalm Labayo</p>
-                        <p class="about__cooks-item__role role be-vietnam-pro-semibold">Graphic Designer</p>
-                        <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">The only love triangles I crave for.</p>
-                    </div>
-                </li>
-                <li class="about__cooks-item">
-                    <img class="about__cooks-item__img" src="/src/assets/images/7.webp" alt="img">
-                    <div class="about__cooks-item__text-container text-container">
-                        <p class="about__cooks-item__name name">Paula Ayes</p>
-                        <p class="about__cooks-item__role role be-vietnam-pro-semibold">Multimedia Artist</p>
-                        <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">Caution, I'm hot.</p>
-                    </div>
-                </li>
-                <li class="about__cooks-item">
-                    <img class="about__cooks-item__img" src="/src/assets/images/8.webp" alt="img">
-                    <div class="about__cooks-item__text-container text-container">
-                        <p class="about__cooks-item__name name">SJ Gulmatico</p>
-                        <p class="about__cooks-item__role role be-vietnam-pro-semibold">Simmer Head</p>
-                        <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">I just like chicken wings.</p>
-                    </div>
-                </li>
-                <li class="about__cooks-item">
-                    <img class="about__cooks-item__img" src="/src/assets/images/9.webp" alt="img">
-                    <div class="about__cooks-item__text-container text-container">
-                        <p class="about__cooks-item__name name">Dastyn De Jesus</p>
-                        <p class="about__cooks-item__role role be-vietnam-pro-semibold">Fashion Head</p>
-                        <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">When life throws you bananas, make turon.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </Section>
+  <Section class="about">
+    <div class="about__container container">
+      <h1 class="about__title">The Creative Cooks</h1>
+      <ul class="about__cooks-list" role="list">
+        <li class="about__cooks-item">
+          <img class="about__cooks-item__img" src="/src/assets/images/1.webp" alt="img" />
+          <div class="about__cooks-item__text-container text-container">
+            <p class="about__cooks-item__name name">R.K. De la Rosa</p>
+            <p class="about__cooks-item__role role be-vietnam-pro-semibold">Creative Director</p>
+            <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">
+              Crazy bao't design.
+            </p>
+          </div>
+        </li>
+        <li class="about__cooks-item">
+          <img class="about__cooks-item__img" src="/src/assets/images/2.webp" alt="img" />
+          <div class="about__cooks-item__text-container text-container">
+            <p class="about__cooks-item__name name">Jean Chua</p>
+            <p class="about__cooks-item__role role be-vietnam-pro-semibold">Chef Strategist</p>
+            <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">
+              I'm cold, but I can make you happy. *wink*
+            </p>
+          </div>
+        </li>
+        <li class="about__cooks-item">
+          <img class="about__cooks-item__img" src="/src/assets/images/3.webp" alt="img" />
+          <div class="about__cooks-item__text-container text-container">
+            <p class="about__cooks-item__name name">Jena Hernandez</p>
+            <p class="about__cooks-item__role role be-vietnam-pro-semibold">Multimedia Artist</p>
+            <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">Ramen calm.</p>
+          </div>
+        </li>
+        <li class="about__cooks-item">
+          <img class="about__cooks-item__img" src="/src/assets/images/4.webp" alt="img" />
+          <div class="about__cooks-item__text-container text-container">
+            <p class="about__cooks-item__name name">Kristel De Leon</p>
+            <p class="about__cooks-item__role role be-vietnam-pro-semibold">Accounts Executive</p>
+            <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">
+              Livin' la Vida Yolk'a!
+            </p>
+          </div>
+        </li>
+        <li class="about__cooks-item">
+          <img class="about__cooks-item__img" src="/src/assets/images/5.webp" alt="img" />
+          <div class="about__cooks-item__text-container text-container">
+            <p class="about__cooks-item__name name">Alexander Marinas</p>
+            <p class="about__cooks-item__role role be-vietnam-pro-semibold">Web Development Head</p>
+            <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">Sip happens.</p>
+          </div>
+        </li>
+        <li class="about__cooks-item">
+          <img class="about__cooks-item__img" src="/src/assets/images/6.webp" alt="img" />
+          <div class="about__cooks-item__text-container text-container">
+            <p class="about__cooks-item__name name">Psalm Labayo</p>
+            <p class="about__cooks-item__role role be-vietnam-pro-semibold">Graphic Designer</p>
+            <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">
+              The only love triangles I crave for.
+            </p>
+          </div>
+        </li>
+        <li class="about__cooks-item">
+          <img class="about__cooks-item__img" src="/src/assets/images/7.webp" alt="img" />
+          <div class="about__cooks-item__text-container text-container">
+            <p class="about__cooks-item__name name">Paula Ayes</p>
+            <p class="about__cooks-item__role role be-vietnam-pro-semibold">Multimedia Artist</p>
+            <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">Caution, I'm hot.</p>
+          </div>
+        </li>
+        <li class="about__cooks-item">
+          <img class="about__cooks-item__img" src="/src/assets/images/8.webp" alt="img" />
+          <div class="about__cooks-item__text-container text-container">
+            <p class="about__cooks-item__name name">SJ Gulmatico</p>
+            <p class="about__cooks-item__role role be-vietnam-pro-semibold">Simmer Head</p>
+            <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">
+              I just like chicken wings.
+            </p>
+          </div>
+        </li>
+        <li class="about__cooks-item">
+          <img class="about__cooks-item__img" src="/src/assets/images/9.webp" alt="img" />
+          <div class="about__cooks-item__text-container text-container">
+            <p class="about__cooks-item__name name">Dastyn De Jesus</p>
+            <p class="about__cooks-item__role role be-vietnam-pro-semibold">Fashion Head</p>
+            <p class="about__cooks-item__hover hover be-vietnam-pro-semibold">
+              When life throws you bananas, make turon.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </Section>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {}
 </script>
 
 <style lang="scss" scoped>
@@ -166,7 +176,7 @@ $bg-white: $white;
 
         &::before {
           position: absolute;
-          content: "";
+          content: '';
           background-color: $bg-white;
           min-width: 3rem;
           min-height: 1.5rem;

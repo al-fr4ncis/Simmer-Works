@@ -33,13 +33,13 @@ const router = createRouter({
       path: '/simmer-works-copyright-information',
       name: 'SimmerCopyright',
       component: () => import('@/components/SimmerCopyright.vue')
-    }, 
+    }
   ]
 })
 
 router.afterEach(() => {
   // Scroll to the top of the page after navigation
-  window.scrollTo(0, 0);
-});
+  window.scrollTo(0, 0)
+})
 
 export default router

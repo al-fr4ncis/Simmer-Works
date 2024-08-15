@@ -1,10 +1,6 @@
 <template>
   <nav class="nav">
-    <ul
-      class="nav__list"
-      :class="{ 'mobile-menu-open': menu, 'desktop-menu': !menu }"
-      role="list"
-    >
+    <ul class="nav__list" :class="{ 'mobile-menu-open': menu, 'desktop-menu': !menu }" role="list">
       <li class="nav__item">
         <RouterLink @click="menuBtn(menu)" to="/" class="home">home</RouterLink>
       </li>
@@ -22,12 +18,7 @@
           Get a Quote
         </button>
       </li>
-      <button
-        class="mobile-menu-btn"
-        @click="menuBtn(true)"
-        role="button"
-        aria-label="button"
-      >
+      <button class="mobile-menu-btn" @click="menuBtn(true)" role="button" aria-label="button">
         <span class="x"></span>
       </button>
     </ul>
@@ -41,19 +32,10 @@
         </button>
       </li>
       <li class="nav__list-right__item" @click="toggleBell">
-        <img
-          src="@/assets/images/plate.webp"
-          class="bell-icon"
-          alt="bell icon"
-        />
+        <img src="@/assets/images/plate.webp" class="bell-icon" alt="bell icon" />
       </li>
       <li class="nav__list-right__item">
-        <button
-          class="menu-btn"
-          @click="menuBtn(true)"
-          role="button"
-          aria-label="button"
-        >
+        <button class="menu-btn" @click="menuBtn(true)" role="button" aria-label="button">
           <span class="hamburger"></span>
         </button>
       </li>
@@ -74,61 +56,64 @@
 </template>
 
 <script>
-import { ref, onUnmounted, watch } from "vue";
+import { ref, onUnmounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 
 export default {
   setup() {
-    const bell = ref(false);
-    const router = useRouter();
+    const bell = ref(false)
+    const router = useRouter()
 
     // Handles clicks on the bell modal
     const modal = (event) => {
-      if (event.target.id == "bellModal") {
-        toggleBell();
+      if (event.target.id == 'bellModal') {
+        toggleBell()
       }
-    };
+    }
 
     // Toggles the bell state
     const toggleBell = () => {
-      bell.value = !bell.value;
-    };
+      bell.value = !bell.value
+    }
 
     // Watches for changes in the bell state
     // Adds or removes event listeners based on the bell state
     // This prevents memory leaks and unnecessary event handling
-    watch(() => bell.value, (change) => {
-      if (change) {
-        window.addEventListener("click", modal);
-      } else {
-        window.removeEventListener("click", modal);
+    watch(
+      () => bell.value,
+      (change) => {
+        if (change) {
+          window.addEventListener('click', modal)
+        } else {
+          window.removeEventListener('click', modal)
+        }
       }
-    });
+    )
 
     // Ensures the event listener is removed when the component is unmounted
     // This prevents memory leaks and ensures proper cleanup
     onUnmounted(() => {
-      window.removeEventListener("click", modal);
-    });
+      window.removeEventListener('click', modal)
+    })
 
-    const menu = ref(false);
+    const menu = ref(false)
 
     const menuBtn = (button) => {
-      if(button) {
-        menu.value = !menu.value;
+      if (button) {
+        menu.value = !menu.value
       }
-    };
+    }
 
     const home = () => {
       router.push('/')
     }
 
-    const checkout = () =>  {
+    const checkout = () => {
       router.push('/checkout')
-      if(bell.value) {
+      if (bell.value) {
         toggleBell()
-      } else if(menu.value) {
-        menu.value = !menu.value;
+      } else if (menu.value) {
+        menu.value = !menu.value
       }
     }
 
@@ -139,9 +124,9 @@ export default {
       menu,
       home,
       checkout
-    };
-  },
-};
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -204,7 +189,7 @@ $border-orange: var(--orange-600);
         &::before,
         &::after {
           position: absolute;
-          content: "";
+          content: '';
           background-color: $bg-white;
           width: 100%;
           height: 3px;
@@ -305,7 +290,7 @@ $border-orange: var(--orange-600);
         .hamburger::before,
         .hamburger::after {
           position: absolute;
-          content: "";
+          content: '';
           right: 0;
         }
 
@@ -322,62 +307,62 @@ $border-orange: var(--orange-600);
 }
 
 .bell-modal {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 999;
 
-    &__container {
-      min-width: 300px;
-      min-height: 320px;
-      margin-top: 1rem;
-      margin-right: 1rem;
-      padding: 3rem;
-      border: 2px solid black;
-      border-radius: 2rem;
-      background-color: rgb(247, 237, 225);
-      position: relative;
+  &__container {
+    min-width: 300px;
+    min-height: 320px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 3rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+    background-color: rgb(247, 237, 225);
+    position: relative;
 
-      .h1 {
-        font-size: 1.2rem;
-      }
+    .h1 {
+      font-size: 1.2rem;
+    }
 
-      .hr {
-        margin-top: 2rem;
-        border: 2px dashed black;
-      }
+    .hr {
+      margin-top: 2rem;
+      border: 2px dashed black;
+    }
 
-      .quote-btn {
-        position: absolute;
-        bottom: calc(0px + 1.5rem);
-        right: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: fit-content;
-        white-space: nowrap;
-        padding: 0.6rem 1.6rem;
-        border-radius: 0.5rem;
-        border: none;
-        cursor: pointer;
-        font-size: 1.2rem;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
-        font-family: Nord;
-        background-color: #fa9a11;
-        color: black;
-        border: 2px solid #fa9a11;
+    .quote-btn {
+      position: absolute;
+      bottom: calc(0px + 1.5rem);
+      right: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: fit-content;
+      white-space: nowrap;
+      padding: 0.6rem 1.6rem;
+      border-radius: 0.5rem;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      font-family: Nord;
+      background-color: #fa9a11;
+      color: black;
+      border: 2px solid #fa9a11;
 
-        &:hover {
-          background-color: black;
-          color: #fa9a11;
-        }
+      &:hover {
+        background-color: black;
+        color: #fa9a11;
       }
     }
   }
+}
 
 @media (min-width: 990px) {
   .nav {

@@ -1,179 +1,249 @@
 <template>
-    <Section class="menu">
-        <div class="menu__container">
-            <div class="menu__header">
-                <h1 class="menu__title">Tell us what you're craving for.</h1>
-            </div>
+  <Section class="menu">
+    <div class="menu__container">
+      <div class="menu__header">
+        <h1 class="menu__title">Tell us what you're craving for.</h1>
+      </div>
 
-            <div class="menu__about-us">
-                <nav class="menu__about-us__nav">
-                    <ul class="menu__about-us__nav__list nav-list container" role="list">
-                        <li @click="setActive(0)" :data-nav-active="active === 0 || null" class="menu__about-us__nav__item nav-list__item">Appetizers</li>
-                        <li @click="setActive(1)" :data-nav-active="active === 1 || null" class="menu__about-us__nav__item nav-list__item">Main Course</li>
-                        <li @click="setActive(2)" :data-nav-active="active === 2 || null" class="menu__about-us__nav__item nav-list__item">Dessert</li>
-                    </ul>
-                </nav>
+      <div class="menu__about-us">
+        <nav class="menu__about-us__nav">
+          <ul class="menu__about-us__nav__list nav-list container" role="list">
+            <li
+              @click="setActive(0)"
+              :data-nav-active="active === 0 || null"
+              class="menu__about-us__nav__item nav-list__item"
+            >
+              Appetizers
+            </li>
+            <li
+              @click="setActive(1)"
+              :data-nav-active="active === 1 || null"
+              class="menu__about-us__nav__item nav-list__item"
+            >
+              Main Course
+            </li>
+            <li
+              @click="setActive(2)"
+              :data-nav-active="active === 2 || null"
+              class="menu__about-us__nav__item nav-list__item"
+            >
+              Dessert
+            </li>
+          </ul>
+        </nav>
 
-                <div class="menu__about-us__content container">
-                    <ul class="menu__about-us__content__list" role="list">
-                        <li :data-item-active="active === 0 || null" class="menu__about-us__content__item">
-                            <div class="menu__about-us__content__title-container">
-                                <h1 class="menu__about-us__content__title content-title baskervville-regular-italic" >Appetizers</h1>
-                                <p class="menu__about-us__content__subtitle content-subtitle be-vietnam-pro-semibold">Simmer Solutions</p>
-                            </div>    
-                            
-                            <div class="menu__about-us__content__phase-container">
-                                <h2 class="menu__about-us__content__phase be-vietnam-pro-bold">Phase 1</h2>
-                                <p class="menu__about-us__content__description  be-vietnam-pro-semibold">Increase your hunger for a Simmering brand! The foundation of a brand starts with its content. It is our mission to develop your full brand identity that will tantalize the market’s taste buds.</p>
-                            </div>
+        <div class="menu__about-us__content container">
+          <ul class="menu__about-us__content__list" role="list">
+            <li :data-item-active="active === 0 || null" class="menu__about-us__content__item">
+              <div class="menu__about-us__content__title-container">
+                <h1
+                  class="menu__about-us__content__title content-title baskervville-regular-italic"
+                >
+                  Appetizers
+                </h1>
+                <p
+                  class="menu__about-us__content__subtitle content-subtitle be-vietnam-pro-semibold"
+                >
+                  Simmer Solutions
+                </p>
+              </div>
 
-                            <ul class="menu__about-us__content__services" role="list">
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Brand Messaging</li>
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Brand Naming</li>
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Brand Research</li>
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Brand Strategy</li>
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Copywriting</li>
-                            </ul>
-                        </li>
+              <div class="menu__about-us__content__phase-container">
+                <h2 class="menu__about-us__content__phase be-vietnam-pro-bold">Phase 1</h2>
+                <p class="menu__about-us__content__description be-vietnam-pro-semibold">
+                  Increase your hunger for a Simmering brand! The foundation of a brand starts with
+                  its content. It is our mission to develop your full brand identity that will
+                  tantalize the market’s taste buds.
+                </p>
+              </div>
 
-                        <li :data-item-active="active === 1 || null" class="menu__about-us__content__item" >
-                            <div class="menu__about-us__content__title-container">
-                                <h1 class="menu__about-us__content__title content-title baskervville-regular-italic">Main Course</h1>
-                                <p class="menu__about-us__content__subtitle content-subtitle be-vietnam-pro-semibold">Brand Identity</p>
-                            </div>
-                            <div class="menu__about-us__content__phase-container">
-                                <h2 class="menu__about-us__content__phase be-vietnam-pro-bold">Phase 2</h2>
-                                <p class="menu__about-us__content__description  be-vietnam-pro-semibold">Our specialty. Modern and flexible. We create designs that will grow and evolve with your brand content. Consistency is key when it comes to design and it is our goal to create a look for your brand that will be ready to interact with the modern world.</p>
-                            </div>
+              <ul class="menu__about-us__content__services" role="list">
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">
+                  Brand Messaging
+                </li>
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">Brand Naming</li>
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">Brand Research</li>
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">Brand Strategy</li>
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">Copywriting</li>
+              </ul>
+            </li>
 
-                            <ul class="menu__about-us__content__services" role="list">
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Brand Identity</li>
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Creative Direction</li>
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Digital Designs / ADs</li>
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Logo Creation</li>
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Photo & Video</li>
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Print and Packaging</li>
-                            </ul>
-                        </li>
+            <li :data-item-active="active === 1 || null" class="menu__about-us__content__item">
+              <div class="menu__about-us__content__title-container">
+                <h1
+                  class="menu__about-us__content__title content-title baskervville-regular-italic"
+                >
+                  Main Course
+                </h1>
+                <p
+                  class="menu__about-us__content__subtitle content-subtitle be-vietnam-pro-semibold"
+                >
+                  Brand Identity
+                </p>
+              </div>
+              <div class="menu__about-us__content__phase-container">
+                <h2 class="menu__about-us__content__phase be-vietnam-pro-bold">Phase 2</h2>
+                <p class="menu__about-us__content__description be-vietnam-pro-semibold">
+                  Our specialty. Modern and flexible. We create designs that will grow and evolve
+                  with your brand content. Consistency is key when it comes to design and it is our
+                  goal to create a look for your brand that will be ready to interact with the
+                  modern world.
+                </p>
+              </div>
 
-                        <li :data-item-active="active === 2 || null" class="menu__about-us__content__item" >
-                            <div class="menu__about-us__content__title-container">
-                                <h1 class="menu__about-us__content__title content-title baskervville-regular-italic">Dessert</h1>
-                                <p class="menu__about-us__content__subtitle content-subtitle be-vietnam-pro-semibold">Website Development</p>
-                            </div>
-                            <div class="menu__about-us__content__phase-container">
-                                <h2 class="menu__about-us__content__phase be-vietnam-pro-bold">Phase 3</h2>
-                                <p class="menu__about-us__content__description  be-vietnam-pro-semibold">Ready for dessert? Brand engagement is brand awareness. It allows brands to build relationships with its market. It‘s all about gaining trust and enhancing brand reputation by creating experiences that harness interaction.</p>
-                            </div>
+              <ul class="menu__about-us__content__services" role="list">
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">Brand Identity</li>
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">
+                  Creative Direction
+                </li>
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">
+                  Digital Designs / ADs
+                </li>
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">Logo Creation</li>
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">Photo & Video</li>
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">
+                  Print and Packaging
+                </li>
+              </ul>
+            </li>
 
-                            <ul class="menu__about-us__content__services" role="list">
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Mobile App Development (PWA)</li>
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Search Engine Optimization (SEO)</li>
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">UI/UX Design</li>
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Web Design</li>
-                                <li class="menu__about-us__content__service  be-vietnam-pro-bold">Web Development</li>
-                            </ul>
-                        </li>
-                    </ul>
+            <li :data-item-active="active === 2 || null" class="menu__about-us__content__item">
+              <div class="menu__about-us__content__title-container">
+                <h1
+                  class="menu__about-us__content__title content-title baskervville-regular-italic"
+                >
+                  Dessert
+                </h1>
+                <p
+                  class="menu__about-us__content__subtitle content-subtitle be-vietnam-pro-semibold"
+                >
+                  Website Development
+                </p>
+              </div>
+              <div class="menu__about-us__content__phase-container">
+                <h2 class="menu__about-us__content__phase be-vietnam-pro-bold">Phase 3</h2>
+                <p class="menu__about-us__content__description be-vietnam-pro-semibold">
+                  Ready for dessert? Brand engagement is brand awareness. It allows brands to build
+                  relationships with its market. It‘s all about gaining trust and enhancing brand
+                  reputation by creating experiences that harness interaction.
+                </p>
+              </div>
 
-                    <button class="menu__about-us__button">Add To Plate</button>
-                </div>
+              <ul class="menu__about-us__content__services" role="list">
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">
+                  Mobile App Development (PWA)
+                </li>
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">
+                  Search Engine Optimization (SEO)
+                </li>
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">UI/UX Design</li>
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">Web Design</li>
+                <li class="menu__about-us__content__service be-vietnam-pro-bold">
+                  Web Development
+                </li>
+              </ul>
+            </li>
+          </ul>
 
-            </div>
-
-            <div class="menu__menu container">
-                <h1 class="menu__menu__title">A la Carte Menu</h1>
-                <div class="menu__menu__search-wrapper">
-                    <input type="text" class="menu__menu__search" placeholder="Search">
-                </div>
-
-                <ul class="menu__menu__list" role="list">
-                    <li class="menu__menu__item">
-                        <div class="menu__menu__item__content">
-                            <h1 class="menu__menu__item__title">Brand Development</h1>
-                        </div>
-                        <button class="menu__menu__item__button">Add To Plate</button>
-                    </li>
-                    <li class="menu__menu__item">
-                        <div class="menu__menu__item__content">
-                            <h1 class="menu__menu__item__title">Brand Identity</h1>
-                        </div>
-                        <button class="menu__menu__item__button">Add To Plate</button>
-                    </li>
-                    <li class="menu__menu__item">
-                        <div class="menu__menu__item__content">
-                            <h1 class="menu__menu__item__title">Brand Messaging</h1>
-                        </div>
-                        <button class="menu__menu__item__button">Add To Plate</button>
-                    </li>
-                    <li class="menu__menu__item">
-                        <div class="menu__menu__item__content">
-                            <h1 class="menu__menu__item__title">Brand Naming</h1>
-                        </div>
-                        <button class="menu__menu__item__button">Add To Plate</button>
-                    </li>
-                    <li class="menu__menu__item">
-                        <div class="menu__menu__item__content">
-                            <h1 class="menu__menu__item__title">Brand Research</h1>
-                        </div>
-                        <button class="menu__menu__item__button">Add To Plate</button>
-                    </li>
-                    <li class="menu__menu__item">
-                        <div class="menu__menu__item__content">
-                            <h1 class="menu__menu__item__title">Brand Strategy</h1>
-                        </div>
-                        <button class="menu__menu__item__button">Add To Plate</button>
-                    </li>
-                </ul>
-
-                <div class="menu__menu__course">
-                    <div class="menu__menu__course__content">                        
-                        <h1 class="menu__menu__course__title baskervville-regular-italic">Full Course</h1>
-                        <p class="menu__menu__course__description">includes appetizers, main course, and desserts</p>
-                    </div>
-                    <button class="menu__menu__course__button">Add To Plate</button>
-                </div>
-                
-                <div class="menu__menu__course">
-                    <div class="menu__menu__course__content">                        
-                        <h1 class="menu__menu__course__title baskervville-regular-italic">Chef’s Choice</h1>
-                        <p class="menu__menu__course__description">CAN'T DECIDE? TALK TO US.</p>
-                    </div>
-                    <button class="menu__menu__course__button">Add To Plate</button>
-                </div>
-            </div>
-
-            <div class="menu__button-container">
-                <button @click="checkout" class="menu__button">Checkout</button>
-            </div>
+          <button class="menu__about-us__button">Add To Plate</button>
         </div>
-    </Section>
+      </div>
+
+      <div class="menu__menu container">
+        <h1 class="menu__menu__title">A la Carte Menu</h1>
+        <div class="menu__menu__search-wrapper">
+          <input type="text" class="menu__menu__search" placeholder="Search" />
+        </div>
+
+        <ul class="menu__menu__list" role="list">
+          <li class="menu__menu__item">
+            <div class="menu__menu__item__content">
+              <h1 class="menu__menu__item__title">Brand Development</h1>
+            </div>
+            <button class="menu__menu__item__button">Add To Plate</button>
+          </li>
+          <li class="menu__menu__item">
+            <div class="menu__menu__item__content">
+              <h1 class="menu__menu__item__title">Brand Identity</h1>
+            </div>
+            <button class="menu__menu__item__button">Add To Plate</button>
+          </li>
+          <li class="menu__menu__item">
+            <div class="menu__menu__item__content">
+              <h1 class="menu__menu__item__title">Brand Messaging</h1>
+            </div>
+            <button class="menu__menu__item__button">Add To Plate</button>
+          </li>
+          <li class="menu__menu__item">
+            <div class="menu__menu__item__content">
+              <h1 class="menu__menu__item__title">Brand Naming</h1>
+            </div>
+            <button class="menu__menu__item__button">Add To Plate</button>
+          </li>
+          <li class="menu__menu__item">
+            <div class="menu__menu__item__content">
+              <h1 class="menu__menu__item__title">Brand Research</h1>
+            </div>
+            <button class="menu__menu__item__button">Add To Plate</button>
+          </li>
+          <li class="menu__menu__item">
+            <div class="menu__menu__item__content">
+              <h1 class="menu__menu__item__title">Brand Strategy</h1>
+            </div>
+            <button class="menu__menu__item__button">Add To Plate</button>
+          </li>
+        </ul>
+
+        <div class="menu__menu__course">
+          <div class="menu__menu__course__content">
+            <h1 class="menu__menu__course__title baskervville-regular-italic">Full Course</h1>
+            <p class="menu__menu__course__description">
+              includes appetizers, main course, and desserts
+            </p>
+          </div>
+          <button class="menu__menu__course__button">Add To Plate</button>
+        </div>
+
+        <div class="menu__menu__course">
+          <div class="menu__menu__course__content">
+            <h1 class="menu__menu__course__title baskervville-regular-italic">Chef’s Choice</h1>
+            <p class="menu__menu__course__description">CAN'T DECIDE? TALK TO US.</p>
+          </div>
+          <button class="menu__menu__course__button">Add To Plate</button>
+        </div>
+      </div>
+
+      <div class="menu__button-container">
+        <button @click="checkout" class="menu__button">Checkout</button>
+      </div>
+    </div>
+  </Section>
 </template>
 
 <script>
 import { ref } from 'vue'
-import { useRouter } from 'vue-router';
+import { useRouter } from 'vue-router'
 
-    export default {
-        setup() {
-            const router = useRouter()
-            const active = ref(0)
+export default {
+  setup() {
+    const router = useRouter()
+    const active = ref(0)
 
-            const setActive = (index) => {
-                active.value = index
-            }
-
-            const checkout = () =>  {
-              router.push('/checkout')
-            }
-
-            return {
-                active,
-                setActive,
-                checkout
-            }
-        }
+    const setActive = (index) => {
+      active.value = index
     }
+
+    const checkout = () => {
+      router.push('/checkout')
+    }
+
+    return {
+      active,
+      setActive,
+      checkout
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -242,7 +312,7 @@ $border-white: $white-400;
 
           &::before {
             position: absolute;
-            content: "";
+            content: '';
             width: 2rem;
             height: 1.5rem;
             top: -3.5rem;
@@ -335,7 +405,7 @@ $border-white: $white-400;
 
       &::after {
         position: absolute;
-        content: "";
+        content: '';
         width: 3rem;
         height: 3rem;
         right: 0.5rem;

@@ -1,17 +1,12 @@
 <template>
   <Section class="about-us">
     <div class="container">
-      <h1 class="about-us__title">
-        We are more than just a Design and Branding Studio.
-      </h1>
+      <h1 class="about-us__title">We are more than just a Design and Branding Studio.</h1>
 
       <div class="about-us__menu">
         <div class="about-us__menu__buttons">
           <button @click="btnPre" class="about-us__menu--btn-pre btn">
-            <img
-              src="/src/assets/images/left-arrow.svg"
-              alt="left-arrow"
-            />
+            <img src="/src/assets/images/left-arrow.svg" alt="left-arrow" />
           </button>
           <ul class="about-us__menu__title-list" role="list" data-title-list>
             <li class="about-us__menu__title-item">Appetizers</li>
@@ -19,59 +14,34 @@
             <li class="about-us__menu__title-item">Dessert</li>
           </ul>
           <button @click="btnNext" class="about-us__menu--btn-next btn">
-            <img
-              src="/src/assets/images/right-arrow.svg"
-              alt="left-arrow"
-            />
+            <img src="/src/assets/images/right-arrow.svg" alt="left-arrow" />
           </button>
         </div>
 
         <ul class="about-us__menu__list" role="list" data-menu-list>
           <li class="about-us__menu__items">
             <p class="about-us__menu__item">Appetizers</p>
-            <p class="about-us__menu__item be-vietnam-pro-bold">
-              Brand Messaging
-            </p>
+            <p class="about-us__menu__item be-vietnam-pro-bold">Brand Messaging</p>
             <p class="about-us__menu__item be-vietnam-pro-bold">Brand Naming</p>
-            <p class="about-us__menu__item be-vietnam-pro-bold">
-              Brand Research
-            </p>
-            <p class="about-us__menu__item be-vietnam-pro-bold">
-              Brand Strategy
-            </p>
+            <p class="about-us__menu__item be-vietnam-pro-bold">Brand Research</p>
+            <p class="about-us__menu__item be-vietnam-pro-bold">Brand Strategy</p>
             <p class="about-us__menu__item be-vietnam-pro-bold">Copywriting</p>
           </li>
           <li class="about-us__menu__items" data-active>
             <p class="about-us__menu__item">Main Course</p>
-            <p class="about-us__menu__item be-vietnam-pro-bold">
-              Brand Identity
-            </p>
-            <p class="about-us__menu__item be-vietnam-pro-bold">
-              Creative Direction
-            </p>
-            <p class="about-us__menu__item be-vietnam-pro-bold">
-              Digital Designs / ADs
-            </p>
-            <p class="about-us__menu__item be-vietnam-pro-bold">
-              Logo Creation
-            </p>
-            <p class="about-us__menu__item be-vietnam-pro-bold">
-              Photo & Video
-            </p>
+            <p class="about-us__menu__item be-vietnam-pro-bold">Brand Identity</p>
+            <p class="about-us__menu__item be-vietnam-pro-bold">Creative Direction</p>
+            <p class="about-us__menu__item be-vietnam-pro-bold">Digital Designs / ADs</p>
+            <p class="about-us__menu__item be-vietnam-pro-bold">Logo Creation</p>
+            <p class="about-us__menu__item be-vietnam-pro-bold">Photo & Video</p>
           </li>
           <li class="about-us__menu__items">
             <p class="about-us__menu__item">Dessert</p>
-            <p class="about-us__menu__item be-vietnam-pro-bold">
-              Mobile App Development (PWA)
-            </p>
-            <p class="about-us__menu__item be-vietnam-pro-bold">
-              Search Engine Optimization (SEO)
-            </p>
+            <p class="about-us__menu__item be-vietnam-pro-bold">Mobile App Development (PWA)</p>
+            <p class="about-us__menu__item be-vietnam-pro-bold">Search Engine Optimization (SEO)</p>
             <p class="about-us__menu__item be-vietnam-pro-bold">UI/UX Design</p>
             <p class="about-us__menu__item be-vietnam-pro-bold">Web Design</p>
-            <p class="about-us__menu__item be-vietnam-pro-bold">
-              Web Development
-            </p>
+            <p class="about-us__menu__item be-vietnam-pro-bold">Web Development</p>
           </li>
         </ul>
       </div>
@@ -81,63 +51,57 @@
 </template>
 
 <script>
-  import { useRouter } from 'vue-router';
-  
-  export default {
-    setup() {
+import { useRouter } from 'vue-router'
+
+export default {
+  setup() {
     const router = useRouter()
 
     // change slide function
     const changeSlide = (direction) => {
       // Get the list of slides and the active slide
-      const activeSlide = document.querySelector("[data-active]");
-      const slideList = document.querySelector("[data-title-list]");
-      const slides = [...slideList.children];
-      const activeIndex = slides.indexOf(activeSlide);
+      const activeSlide = document.querySelector('[data-active]')
+      const slideList = document.querySelector('[data-title-list]')
+      const slides = [...slideList.children]
+      const activeIndex = slides.indexOf(activeSlide)
 
       // Get the content list
       const activeSlideContent = document
-        .querySelector("[data-menu-list]")
-        .querySelector("[data-active]");
-      const slideContentList = document.querySelector("[data-menu-list]").children;
+        .querySelector('[data-menu-list]')
+        .querySelector('[data-active]')
+      const slideContentList = document.querySelector('[data-menu-list]').children
 
       // Function to set attributes on slides
       const changeSlideAttributes = (slides, removeAttr, addAttr) => {
         slides.forEach((slide) => {
-          slide.removeAttribute(removeAttr);
-          slide.setAttribute(addAttr, "");
-        });
-      };
+          slide.removeAttribute(removeAttr)
+          slide.setAttribute(addAttr, '')
+        })
+      }
 
       // Set attributes of the currently active slide
-      changeSlideAttributes(
-        [activeSlide, activeSlideContent],
-        "data-active",
-        "data-previous"
-      );
+      changeSlideAttributes([activeSlide, activeSlideContent], 'data-active', 'data-previous')
 
       // Calculate the index of the next slide
-      const nextSlideIndex = (activeIndex + direction + slides.length) % slides.length;
-      const nextSlide = slides[nextSlideIndex];
-      const nextSlideContent = slideContentList[nextSlideIndex];
+      const nextSlideIndex = (activeIndex + direction + slides.length) % slides.length
+      const nextSlide = slides[nextSlideIndex]
+      const nextSlideContent = slideContentList[nextSlideIndex]
 
       // Remove the "data-previous" attribute from hidden slides
       // This prevents interference with CSS animations
-      const hiddenSlideIndex = (activeIndex - direction + slides.length) % slides.length;
-      slideContentList[hiddenSlideIndex].removeAttribute("data-previous");
-      slides[hiddenSlideIndex].removeAttribute("data-previous");
+      const hiddenSlideIndex = (activeIndex - direction + slides.length) % slides.length
+      slideContentList[hiddenSlideIndex].removeAttribute('data-previous')
+      slides[hiddenSlideIndex].removeAttribute('data-previous')
 
       // Set attributes of the next slide
-      changeSlideAttributes(
-        [nextSlide, nextSlideContent],
-        "data-previous",
-        "data-active"
-      );
-    };
+      changeSlideAttributes([nextSlide, nextSlideContent], 'data-previous', 'data-active')
+    }
 
     // Functions to handle previous and next button clicks
-    const btnPre = () => changeSlide(-1);
-    const btnNext = () => { changeSlide(+1); };
+    const btnPre = () => changeSlide(-1)
+    const btnNext = () => {
+      changeSlide(+1)
+    }
 
     // Redirect ----------------------------------------------------
     function menu() {
@@ -148,9 +112,9 @@
       btnNext,
       btnPre,
       menu
-    };
-  },
-};
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -374,7 +338,9 @@ $bg-black: var(--black);
     cursor: pointer;
     font-family: Nord;
     font-weight: 600;
-    transition: background-color 0.2s, color 0.2s;
+    transition:
+      background-color 0.2s,
+      color 0.2s;
 
     &:hover {
       background-color: $bg-black;

@@ -16,18 +16,9 @@
             <div class="preparation__difficulty">
               <p class="difficulty-text">DIFFICULTY LEVEL</p>
               <div class="img-container">
-                <img
-                  src="/src/assets/images/sun.svg"
-                  alt="sun-icon"
-                />
-                <img
-                  src="/src/assets/images/sun.svg"
-                  alt="sun-icon"
-                />
-                <img
-                  src="/src/assets/images/sun.svg"
-                  alt="sun-icon"
-                />
+                <img src="/src/assets/images/sun.svg" alt="sun-icon" />
+                <img src="/src/assets/images/sun.svg" alt="sun-icon" />
+                <img src="/src/assets/images/sun.svg" alt="sun-icon" />
               </div>
             </div>
           </div>
@@ -35,10 +26,7 @@
 
         <div class="preparation__highlight-box">
           <div class="preparation__highlight-box__img-container">
-            <img
-              src="/src/assets/images/lightbulb.svg"
-              alt="lightbulb"
-            />
+            <img src="/src/assets/images/lightbulb.svg" alt="lightbulb" />
           </div>
           <p class="preparation__highlight-box__text be-vietnam-pro-regular">
             Our name is an extension of our design pilosophy
@@ -51,52 +39,47 @@
           <p class="preparation__step--number one be-vietnam-pro-bold">1</p>
           <p class="preparation__step__title be-vietnam-pro-bold">Slice</p>
           <p class="preparation__step__description be-vietnam-pro-regular">
-            We start with a bucket of fresh ideas <span>sliced</span> to
-            precision
+            We start with a bucket of fresh ideas <span>sliced</span> to precision
           </p>
         </div>
         <div class="preparation__step">
           <p class="preparation__step--number two be-vietnam-pro-bold">2</p>
           <p class="preparation__step__title be-vietnam-pro-bold">Cook</p>
           <p class="preparation__step__description be-vietnam-pro-regular">
-            We <span>cook-up</span> meaningful stories and solutions for our
-            partners.
+            We <span>cook-up</span> meaningful stories and solutions for our partners.
           </p>
         </div>
         <div class="preparation__step">
           <p class="preparation__step--number three be-vietnam-pro-bold">3</p>
           <p class="preparation__step__title be-vietnam-pro-bold">Execute</p>
           <p class="preparation__step__description be-vietnam-pro-regular">
-            We follow through with a simmering <span>execution</span> - crafted
-            with creativity & infused with insight.
+            We follow through with a simmering <span>execution</span> - crafted with creativity &
+            infused with insight.
           </p>
         </div>
         <div class="preparation__step">
           <p class="preparation__step--number four be-vietnam-pro-bold">4</p>
           <p class="preparation__step__title be-vietnam-pro-bold">Serve</p>
           <p class="preparation__step__description be-vietnam-pro-regular">
-            Hence, <span>serving</span> you with work that definitely will suit
-            your taste.
+            Hence, <span>serving</span> you with work that definitely will suit your taste.
           </p>
         </div>
       </div>
       <div class="preparation__button">
-        <button @click="works" class="preparation--button roboto-black">
-          See for yourself
-        </button>
+        <button @click="works" class="preparation--button roboto-black">See for yourself</button>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-  import { useRouter } from 'vue-router';
-  
-  const router = useRouter()
+import { useRouter } from 'vue-router'
 
-  const works = () => {
-    router.push('/works')
-  }
+const router = useRouter()
+
+const works = () => {
+  router.push('/works')
+}
 </script>
 
 <style lang="scss" scoped>
@@ -145,7 +128,7 @@ $border-white: var(--white-400);
     margin-bottom: 2rem;
 
     .simmered::after {
-      content: " ";
+      content: ' ';
     }
   }
 
@@ -242,7 +225,7 @@ $border-white: var(--white-400);
     .three::before,
     .four::before {
       position: absolute;
-      content: "";
+      content: '';
       width: 100%;
       height: 100%;
       inset: 0;
@@ -434,7 +417,7 @@ $border-white: var(--white-400);
 
         &::after {
           position: absolute;
-          content: "";
+          content: '';
           background-color: $bg-white;
           height: 7.8rem;
           width: 0.1rem;

@@ -1,7 +1,7 @@
 <template>
   <footer>
     <p>Simmer Works</p>
-    <img src="/src/assets/images/copyright.webp" alt="copyright">
+    <img src="/src/assets/images/copyright.webp" alt="copyright" />
     <p>2024</p>
 
     <a class="link" href="/simmer-works-copyright-information" target="_blank">copyright details</a>
@@ -40,6 +40,6 @@ img {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: capitalize;
-  color: #3366CC;
+  color: #3366cc;
 }
 </style>

@@ -1,33 +1,55 @@
 <template>
-    <Section class="checkout">
-        <div class="checkout__container container">
-            <div class="checkout__title">
-                Get a Quote
-            </div>
+  <Section class="checkout">
+    <div class="checkout__container container">
+      <div class="checkout__title">Get a Quote</div>
 
-            <div class="checkout__order">
-                <p class="checkout__order-title">You ordered</p>
-                <ul class="checkout__order-list">
-                    <li class="checkout__order-item">
-                        <p class="checkout__order-item__name"></p>
-                        <button class="checkout__order-item__button">
-                            <img src="/src/assets/images/remove.svg" alt="remove-icon-button">
-                        </button>
-                    </li>
-                </ul>
-                <RouterLink class="checkout__order-button" to="/menu">View our menu</RouterLink>
-            </div>
+      <div class="checkout__order">
+        <p class="checkout__order-title">You ordered</p>
+        <ul class="checkout__order-list">
+          <li class="checkout__order-item">
+            <p class="checkout__order-item__name"></p>
+            <button class="checkout__order-item__button">
+              <img src="/src/assets/images/remove.svg" alt="remove-icon-button" />
+            </button>
+          </li>
+        </ul>
+        <RouterLink class="checkout__order-button" to="/menu">View our menu</RouterLink>
+      </div>
 
-            <form action="" class="checkout__form">
-                <input type="text" id="fname" class="checkout__fname checkout__input" name="fname" placeholder="Full Name"><br>
-                <input type="tel" id="pnumber" class="checkout__pnumber checkout__input" name="pnumber" placeholder="Phone Number"><br>
-                <input type="email" id="email" class="checkout__email checkout__input" name="email" placeholder="Email Address"><br>
-                <input type="text" id="brand" class="checkout__brand checkout__input" name="brand" placeholder="Brand Name/Field"><br>
-                
-                <button type="submit" class="checkout__submit">Checkout</button>
-            </form>
-        </div>
-    </Section>
+      <form action="" class="checkout__form">
+        <input
+          type="text"
+          id="fname"
+          class="checkout__fname checkout__input"
+          name="fname"
+          placeholder="Full Name"
+        /><br />
+        <input
+          type="tel"
+          id="pnumber"
+          class="checkout__pnumber checkout__input"
+          name="pnumber"
+          placeholder="Phone Number"
+        /><br />
+        <input
+          type="email"
+          id="email"
+          class="checkout__email checkout__input"
+          name="email"
+          placeholder="Email Address"
+        /><br />
+        <input
+          type="text"
+          id="brand"
+          class="checkout__brand checkout__input"
+          name="brand"
+          placeholder="Brand Name/Field"
+        /><br />
+
+        <button type="submit" class="checkout__submit">Checkout</button>
+      </form>
+    </div>
+  </Section>
 </template>
 
 <style lang="scss" scoped>
@@ -72,7 +94,7 @@ $bg-orange: $orange;
 
   &__order-title {
     font-size: 2rem;
-    font-family: "Be Vietnam Pro";
+    font-family: 'Be Vietnam Pro';
     font-weight: 700;
     text-transform: uppercase;
     max-width: fit-content;
@@ -96,13 +118,13 @@ $bg-orange: $orange;
       border: 1px solid $border-white;
       padding: 1rem 2rem;
       font-size: 1.4rem;
-      font-family: "Be Vietnam Pro", sans-serif;
+      font-family: 'Be Vietnam Pro', sans-serif;
       font-weight: 700;
       color: $txt-white;
       text-transform: capitalize;
       display: none;
     }
-    
+
     &__button {
       display: none;
       background-color: transparent;
@@ -192,7 +214,7 @@ $bg-orange: $orange;
       grid-column: 2;
       border-left: 1px solid $border-white;
       border-bottom: none;
-    	padding: 0 2rem;
+      padding: 0 2rem;
     }
 
     &__form {
